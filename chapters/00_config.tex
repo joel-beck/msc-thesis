@@ -1,0 +1,93 @@
+%
+% This is the official thesis template of
+% the Institute of Computer Science at the
+% Georg-August-University of Göttingen
+%
+%      author: kellner@cs.uni-goettingen.de
+% last update: 17/02/2015
+%
+% If you find any sort of mistake please let me know
+% so that it can be fixed in future releases.
+%
+
+\usepackage[printonlyused,withpage]{acronym}
+\usepackage{afterpage}      % put footnotes in image captions on same page as image
+\usepackage[toc]{appendix}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[a-1b,mathxmp]{pdfx}[2018/12/22]
+
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bbm}
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{calc}           % Required for \widthof command
+\usepackage{cite}
+\usepackage{colorprofiles}
+\usepackage{enumitem}       % customize list environments
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{helvet}         % Helvatica font as sans-serif
+\usepackage{listings}
+\usepackage{marvosym}
+\usepackage{microtype}      % microtypography
+\usepackage{microtype}      % Use microtype to improve typesetting
+\usepackage{multirow}
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{palatino}       % Palatino font as serif font
+\usepackage{parskip}        % add space between paragraphs
+\usepackage{setspace}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{url}            % simple URL typesetting
+\usepackage{xcolor}         % colors
+\usepackage{xurl}
+
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+% set page margin for DIN A4
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=4cm, bottom=5cm, bindingoffset=1cm}
+
+% change appearance of hyperlinks, numbers specify percentage of first color
+% BOOKMARK: PDF Version
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black}, % internal links
+    citecolor={blue!60!black}, % citations
+    urlcolor={blue!60!black} % external links/urls
+}
+
+% BOOKMARK: Print Version
+% \hypersetup{
+%     colorlinks,
+%     linkcolor={black},
+%     citecolor={black},
+%     urlcolor={black}
+% }
+
+\sloppy % makes TeX less fussy about line breaking
+
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\onehalfspacing % 1,5 line spacing
+{}
+
+\titleformat{\chapter}[display] % Make chapter heading smaller
+{\LARGE\bf}{\chaptertitlename\ \thechapter}{10pt}{\huge\bf}
+
+\interfootnotelinepenalty=10000 % Prevent breaking of footnotes
+
+%--- pdf/a format ----
+% insert metadata about the document here
+\RequirePackage{filecontents}
+\begin{filecontents*}{\jobname.xmpdata}
+    \Title{Bridging Citation Analysis and Language Models: A Hybrid Recommender System for Computer Science Papers}
+    \Author{Joel Beck}
+    \Language{en-US}
+\end{filecontents*}
+
+\hypersetup{pdfstartview=}

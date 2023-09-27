@@ -1,0 +1,58 @@
+\section{Outlook} \label{sec:outlook}
+
+Throughout this thesis, we encountered various limitations arising from time constraints and data availability.
+Addressing these challenges can guide future research in the field of paper recommender systems.
+
+\subsubsection*{Data Sources}
+
+This thesis primarily utilizes the D3 dataset \cite{WahleD3Massive2022}. A limitation of this dataset is its lack of continuous updates with recent papers. Ensuring a regularly updated dataset would facilitate the integration of the latest research into the training corpus, potentially improving recommendation quality during inference.
+
+Furthermore, incorporating an additional data source that provides the complete text of papers, rather than just the abstracts, can offer notable enhancements.
+The Citation Recommender could use citation-based features that leverage the citation's position within the text, rather than only relying on static citation analysis metrics like co-citation analysis and bibliographic coupling. Location-aware options are \ac{CPA} \cite{GippCitationProximity2009} (\Cref{sec:citation-proximity-analysis}) and section-based bibliographic coupling \cite{HabibSectionsbasedBibliographic2019} (\Cref{sec:section-based-bibliographic-coupling}).
+Additionally, by harnessing the complete text of each paper, the Language Recommender can produce more informative document embeddings.
+This is especially advantageous when the abstract fails to convey the full depth of the document.
+Such an approach can enhance keyword-based models like TF-IDF and BM25, especially when crucial keywords from the paper are omitted in the abstract.
+Moreover, the Longformer's performance may improve as utilizing full texts would better align the inference corpus with Longformer's training data.
+However, a key drawback of using the full paper text is the significant increase in computational resources and time required for data processing.
+
+A further limitation of this thesis is its dependence on arXiv categories as the ground-truth for recommendation evaluation.
+Although arXiv categories provide a convenient classification method, their flat and broad structure could reduce the efficacy of recommendations.
+This becomes especially evident when considering how the choice of labels and the definition of relevance, based on shared categories, are closely linked.
+
+Adopting a more detailed labeling system, like the ACM Computing Classification System\footnote{\url{https://dl.acm.org/ccs}} with its multi-level hierarchy, could offer greater flexibility in defining a ground-truth for relevance.
+For example, relevance could be more stringently defined based on membership within the same specific subcategory. Under the ACM system, papers within the \emph{Language models} subcategory would be required to align with the entire hierarchy, namely \emph{Information Systems} $\rightarrow$ \emph{Information retrieval} $\rightarrow$ \emph{Retrieval models and ranking} $\rightarrow$ \emph{Language models}.
+Yet, this refined approach might come at a cost: By focusing on highly specific categories for recommendations, the diversity, interdisciplinarity, and serendipity of the recommendations might suffer.
+
+
+\subsubsection*{Methodology}
+
+In addition to data sources, several extensions to the methodology could be explored in future work.
+
+First, the Hybrid Recommender could be redesigned to accommodate multiple query papers when generating recommendations, rather than only one. Such an approach would better mirror a researcher's varied interests, resulting in more personalized recommendations.
+
+Second, integrating a researcher's reading history could help avoid recommending the same papers repeatedly.
+Users could opt to exclude specific papers from future recommendations, ensuring they are not suggested previously read papers or those deemed irrelevant to their research.
+
+Third, exploring hybridization techniques that operate concurrently, rather than in a sequential manner like the cascade strategy, could be beneficial. Although this increases computational demands, it gives users more control by allowing them to adjust the importance of the Citation Recommender in relation to the Language Recommender through a weighting scheme.
+
+
+\subsubsection*{Evaluation Insights}
+
+Several enhancements to the Citation Recommender and the Language Recommender could be explored based on the evaluation outcomes.
+
+As our experiments have shown that the citation-based features are significantly more important than the global document characteristics for the Citation Recommender, replacing some or all of the latter with more features that utilize citation information might be advantageous.
+
+For the Language Recommender, the SciBERT model, being the only domain-specific model, outperformed all other language models. This underscores the benefits of fine-tuning more language models with scientific text before using them for paper recommendation.
+Such a step promises two advantages: First, it is likely to increase the recommendation performance of these models in terms of \ac{MAP}.
+Second, it ensures a more robust comparison of different language models by neutralizing the domain-specificity factor.
+Thus, conclusions about the relative performance among model types such as keyword-based sparse embedding models, static embedding models, and contextual embedding models can be drawn with greater confidence.
+
+Lastly, a deeper dive into the anomalous behavior of the TF-IDF model in our experiments is warranted. Specifically, understanding the inverse relationship between TF-IDF and the impact of citation-based attributes on re-ranking performance could be tested across different setups to either confirm this behavior or attribute it to random chance.
+
+
+\subsubsection*{Accessibility}
+
+The last avenue for future enhancement pertains to the accessibility and user-friendliness of the \emph{readnext} framework.
+The recommender system is currently only available as a Python package installable from GitHub\footnote{\url{https://github.com/joel-beck/readnext}}.
+To make the framework accessible to a broader and less technical audience, it could be deployed as a web application.
+Such a transition would allow researchers to bypass the need for setting up a development environment, locally installing the package, and navigating the setup instructions before using the system.

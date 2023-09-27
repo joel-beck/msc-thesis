@@ -1,0 +1,74 @@
+<mxfile host="65bd71144e">
+    <diagram id="6hGFLwfOUWnqI-ysMvHY" name="Page-1">
+        <mxGraphModel dx="587" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="21" value="Paper A" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;outlineConnect=0;align=center;shape=mxgraph.office.concepts.document;" parent="1" vertex="1">
+                    <mxGeometry x="81" y="113" width="40" height="47" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Paper B" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;outlineConnect=0;align=center;shape=mxgraph.office.concepts.document;" parent="1" vertex="1">
+                    <mxGeometry x="211" y="113" width="40" height="47" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Paper C" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.document;" parent="1" vertex="1">
+                    <mxGeometry x="151" y="222" width="40" height="47" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="cites" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=3;spacingRight=0;" parent="1" source="21" target="23" edge="1">
+                    <mxGeometry x="-0.3704" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="371" y="513" as="sourcePoint"/>
+                        <mxPoint x="101" y="273" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="101" y="247"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="cites" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacingRight=3;" parent="1" edge="1">
+                    <mxGeometry x="-0.3701" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="231" y="160" as="sourcePoint"/>
+                        <mxPoint x="191" y="247" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="231" y="247"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="Paper A" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.document;" parent="1" vertex="1">
+                    <mxGeometry x="402" y="222" width="38" height="47" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Paper B" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.document;" parent="1" vertex="1">
+                    <mxGeometry x="536" y="222" width="38" height="47" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Paper C" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;outlineConnect=0;align=center;shape=mxgraph.office.concepts.document;" parent="1" vertex="1">
+                    <mxGeometry x="476" y="113" width="38" height="47" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="cites" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=3;" parent="1" source="29" target="27" edge="1">
+                    <mxGeometry x="0.4483" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="426" y="292" as="sourcePoint"/>
+                        <mxPoint x="696" y="532" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="421" y="142"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="cites" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacingRight=3;" parent="1" source="29" target="28" edge="1">
+                    <mxGeometry x="0.3893" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="626" y="266" as="sourcePoint"/>
+                        <mxPoint x="576" y="179" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="555" y="142"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="&lt;b&gt;Bibliographic Coupling&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="56" y="50" width="230" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;b&gt;Co-Citation Analysis&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="50" width="230" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

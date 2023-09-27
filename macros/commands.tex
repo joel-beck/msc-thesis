@@ -1,0 +1,73 @@
+% SECTION: Document Configuration
+\newcommand{\mytype}{Master's Thesis}
+
+\newcommand{\mytitle}{Bridging Citation Analysis and Language Models:\\ A Hybrid Recommender System for Computer Science Papers}
+\newcommand{\myauthor}{Joel Beck}
+
+\newcommand{\mydepartment}{Institute of Computer Science}
+\newcommand{\mychair}{Chair for Scientific Information Analytics}
+
+\newcommand{\mysubmissiondate}{26. September 2023}
+
+% SECTION: Custom Commands
+\newcommand \romannumbering {
+    \pagenumbering{roman} % start roman page numbering
+    \setcounter{page}{1} % start with roman page number 1
+}
+
+\newcommand \arabicnumbering {
+    \pagenumbering{arabic} % start arabic page numbering
+    \setcounter{page}{1} % start with arabic page number 1
+}
+
+% double empty page
+\newcommand \doubleemptypage {
+    \clearpage
+    \thispagestyle{empty}
+    \null
+    \cleardoublepage
+}
+
+% create abstract environment that is not available in latex book style
+\newcommand \abstractname{Abstract}
+\newenvironment{abstract}{%
+    \begin{center}%
+        \normalfont\Large\bfseries \abstractname
+    \end{center}%
+    \it%
+} {}
+
+\newcommand \formatabstract {
+    \phantomsection
+    \pdfbookmark{\abstractname}{abstract}
+    \thispagestyle{empty}
+}
+
+\newcommand \resetacronyms {
+    \acresetall % reset acronyms after abstract
+}
+
+\newcommand \formattoc {
+    \phantomsection
+    \pdfbookmark{\contentsname}{toc}
+}
+
+% add before `\addcontentsline` to fix hyperlinks in table of contents
+\newcommand \fixhyperlinks {
+    \cleardoublepage
+    \phantomsection
+}
+
+% override reference title and listings title
+\renewcommand \bibname{References}
+
+\newcommand \formatbibliography {
+    \fixhyperlinks
+    \addcontentsline{toc}{chapter}{\bibname}
+}
+
+\newcommand \formatappendix {
+    \fixhyperlinks
+    \appendix
+    \addcontentsline{toc}{chapter}{Appendix}
+}

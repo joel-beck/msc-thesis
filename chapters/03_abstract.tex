@@ -1,0 +1,20 @@
+\begin{abstract}
+    With the continuous growth of scientific literature, researchers face the challenge of keeping up with the latest research.
+    Paper recommender systems aim to address this challenge by offering automated and personalized recommendations. However, many existing approaches fall short in terms of accessibility, transparency, and customization, often relying too heavily on either citation-driven or content-driven strategies.
+
+    We present a hybrid recommender system for Computer Science papers that blends citation-based and content-based approaches, termed the Citation Recommender and the Language Recommender.
+    The Citation Recommender incorporates global document characteristics, such as publication date, paper citation count, and author citation count, combined with citation analysis techniques like co-citation analysis and bibliographic coupling.
+    By assigning weights to these five elements, users can tailor the system to align with their preferences.
+
+    The Language Recommender employs pretrained language models to embed paper abstracts, generating recommendations based on semantic similarity.
+    Users can choose from eight language models encompassing keyword-based sparse embedding models (TF-IDF and BM25), static embedding models (Word2Vec, FastText, GloVe), and contextualized embedding models (BERT, SciBERT, Longformer). In the hybrid approach, one recommender first identifies candidates that are subsequently re-ranked by the other recommender.
+
+    We assess our hybrid recommender system through a comprehensive three-stage evaluation. Our results highlight the bibliographic coupling score as the most influential factor for the Citation Recommender, while the standalone paper citation count performs at par with randomly sampled recommendations. For the Language Recommender, SciBERT stands out as the most effective language model.
+    Overall, the Language Recommender dominates the Citation Recommender, leading to more relevant and interdisciplinary recommendations.
+    Initiating the hybrid system with the Language Recommender for candidate selection followed by the Citation Recommender
+    for re-ranking yields better and more stable results than the reverse ordering.
+    However, the best overall performance is achieved using a solely content-driven approach with SciBERT, rather than employing a hybrid model.
+
+    This thesis offers insights into paper recommendation systems that combine citation and content strategies. While established techniques like co-citation analysis and bibliographic coupling remain valuable, we advocate for a greater emphasis on content-focused methods, especially those utilizing domain-specific models like SciBERT.
+\end{abstract}
+

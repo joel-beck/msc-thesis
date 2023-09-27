@@ -1,0 +1,24 @@
+\section{Summary} \label{sec:summary}
+
+This thesis introduces a hybrid recommender system for Computer Science papers designed to support researchers in their literature search. Given a query paper, the system generates specific and relevant recommendations.
+To address current literature search shortcomings, the system emphasizes customizability and transparency, drawing information from various paper aspects,
+including metadata, citation analysis, and semantic analysis, to generate recommendations.
+
+The Citation Recommender, the first component of the hybrid system, aggregates factors factors such as publication date, paper citation count, author citation count, co-citation analysis score, and bibliographic coupling score into a single weighted score. This score is based on user-specified weights that quantify the impact of each feature. Candidate papers with the highest weighted score are recommended to the user.
+
+The Language Recommender, the second component of the hybrid system, generates recommendations based on the semantic similarity between the query paper and each candidate paper. The semantic similarity is measured by the cosine similarity between document embeddings of the paper abstracts. The user can choose from one of eight language models to generate the document embeddings. Candidate papers with the highest cosine similarity to the query paper are recommended to the user.
+
+The Hybrid Recommender applies the Citation Recommender and the Language Recommender sequentially. One recommender pre-selects a candidate list of recommendations, while the other recommender re-ranks this list to generate the final recommendation ranking.
+The classification of recommendations as relevant or irrelevant is based on the arXiv categories of the query and candidate papers. If query and recommended candidate share one or more categories, the recommendation is considered relevant. The \ac{MAP} is used as the primary metric to evaluate the recommender system's performance.
+
+Our evaluation reveals that for the Citation Recommender, citation-based features significantly outweigh global document characteristics.
+In particular, the bibliographic coupling score is the most beneficial feature in terms of \ac{MAP}, followed by the co-citation analysis score.
+A general trend we identified is that higher weights assigned to at least one citation-based feature, compared to weights for global document characteristics, correlate with higher \ac{MAP} scores.
+Conversely, for global document characteristics, the paper citation count performs no better than recommendations from randomly selected papers.
+
+The SciBERT language model yields the best performance for the Language Recommender, whereas the Longformer model performs worst.
+When applying only a single recommender, the Language Recommender outperforms the Citation Recommender in terms of \ac{MAP} and recommendation diversity, which quantifies the degree of interdisciplinarity of the recommendations.
+Additionally, the Language Recommender demonstrates greater robustness in language model selection than the Citation Recommender does in feature weight selection. This is evident from the significantly smaller performance variations across language models compared to those across feature weights.
+
+Using the Language Recommender for candidate selection and the Citation Recommender for re-ranking yields better and more consistent results than the reverse order.
+However, peak performance is realized not through a hybrid model but solely with the Language Recommender employing the SciBERT language model.

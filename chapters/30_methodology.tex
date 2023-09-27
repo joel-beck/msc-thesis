@@ -1,0 +1,12 @@
+\chapter{Methodology} \label{sec:methodology}
+
+The \emph{readnext} framework provides a hybrid recommender system, utilizing both citation-based and content-based features, to recommend scientific papers within the Computer Science domain. This chapter addresses \textbf{\ac{RT} 2} as defined in \Cref{sec:research-objectives} by delving into the methodology behind the creation of this recommender system. This encompasses the dataset construction, the training and the inference process.
+
+\Cref{sec:overview} begins with a general overview of the Hybrid Recommender architecture. It introduces both the Citation Recommender and the Language Recommender, and explains how they are combined to form the Hybrid Recommender.
+Additionally, it summarizes the structure of the evaluation and explains the choice of the evaluation metric.
+
+\Cref{sec:dataset-construction} explains the process of dataset construction. It includes information about the different data sources and the rationale behind the dataset's design.
+
+\Cref{sec:training} discusses the training or precomputation stage. The section outlines the preprocessing and computation steps for both the Citation Recommender and the Language Recommender. Moreover, it describes how this information is stored for subsequent use during the inference stage.
+
+Lastly, \Cref{sec:inference} elaborates on how users can harness the framework to generate recommendations based on a specific query paper. The section differentiates between query papers included in the training dataset and those that are not. It also emphasizes how the training stage accelerates the inference process.

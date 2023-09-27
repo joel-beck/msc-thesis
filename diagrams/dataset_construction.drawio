@@ -1,0 +1,55 @@
+<mxfile host="Electron" modified="2023-09-01T12:48:25.116Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="ONVE0s_7T9dlJU85gA9c" version="21.6.8" type="device">
+  <diagram id="PYxEMEsjO_8HddKv5NNp" name="Page-1">
+    <mxGraphModel dx="1026" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;Base Dataset&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=15;fillColor=#fff2cc;strokeColor=#d6b656;fillStyle=solid;" parent="1" vertex="1">
+          <mxGeometry x="79" y="40" width="670" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;b&gt;D3 Dataset&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacingRight=10;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="239" y="60" width="440" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Paper Title" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="359" y="70" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Authors" style="rounded=1;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="359" y="110" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Publication Date" style="rounded=1;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="359" y="150" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Paper Citation Count" style="rounded=1;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="359" y="190" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Author Citation Count" style="rounded=1;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="359" y="230" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Abstract" style="rounded=1;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="359" y="270" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Semanticscholar ID / URL" style="rounded=1;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="359" y="310" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="arXiv ID / URL" style="rounded=1;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="359" y="350" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="&lt;b&gt;arXiv Dataset&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacingRight=10;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="239" y="410" width="440" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="arXiv Labels" style="rounded=1;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="359" y="425" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="&lt;b&gt;Semantic Scholar API&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacingRight=10;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="239" y="490" width="440" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="Citations" style="rounded=1;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="359" y="500" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="References" style="rounded=1;whiteSpace=wrap;html=1;glass=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="359" y="540" width="200" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

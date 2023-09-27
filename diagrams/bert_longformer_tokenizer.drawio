@@ -1,0 +1,66 @@
+<mxfile host="Electron" modified="2023-09-21T06:31:33.821Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="1Mde4a-5JTSRAWP97l1O" version="21.6.8" type="device">
+  <diagram name="Page-1" id="Nzm64e7dy2DF3_7TCLeR">
+    <mxGraphModel dx="1026" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TenlmuJaaia4aGezL9sJ-4" value="&lt;b&gt;Tokens&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="252" y="270" width="558" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OCnkws52NfTszpKIRIXW-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;" parent="1" source="OCnkws52NfTszpKIRIXW-1" target="TenlmuJaaia4aGezL9sJ-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCnkws52NfTszpKIRIXW-8" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;BERT&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];labelPosition=right;verticalLabelPosition=middle;spacingLeft=4;" parent="OCnkws52NfTszpKIRIXW-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.4568" y="-1" relative="1" as="geometry">
+            <mxPoint x="-53" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCnkws52NfTszpKIRIXW-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="OCnkws52NfTszpKIRIXW-1" target="OCnkws52NfTszpKIRIXW-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCnkws52NfTszpKIRIXW-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Longformer&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];spacingLeft=5;labelPosition=right;verticalLabelPosition=middle;" parent="OCnkws52NfTszpKIRIXW-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="-91" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCnkws52NfTszpKIRIXW-1" value="" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="21" y="150" width="411" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OCnkws52NfTszpKIRIXW-3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;BERT pays attention. Longformer extends the dimension.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="26.5" y="155" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OCnkws52NfTszpKIRIXW-5" value="&lt;b&gt;Tokens&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="252" y="30" width="553" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OCnkws52NfTszpKIRIXW-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;[CLS], bert, pays, attention, ., long, ##form, ##er, extends, the, dimension, ., [SEP]&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="257" y="35" width="543" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TenlmuJaaia4aGezL9sJ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.17;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="OCnkws52NfTszpKIRIXW-9" target="TenlmuJaaia4aGezL9sJ-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OCnkws52NfTszpKIRIXW-9" value="&lt;b&gt;Token IDs&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="152" y="210" width="528" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OCnkws52NfTszpKIRIXW-10" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;lt;s&amp;gt;, BER, T, Ġpays, Ġattention, ., ĠLong, former, Ġextends, Ġthe, Ġdimension, ., &amp;lt;/s&amp;gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="253.5" y="275" width="550" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TenlmuJaaia4aGezL9sJ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.14;exitY=0.033;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="TenlmuJaaia4aGezL9sJ-1" target="OCnkws52NfTszpKIRIXW-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TenlmuJaaia4aGezL9sJ-1" value="&lt;b&gt;Token IDs&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=left;verticalAlign=bottom;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="152" y="90" width="528" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TenlmuJaaia4aGezL9sJ-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;101, 14324, 12778, 3086, 1012, 2146, 14192, 2121, 8908, 1996, 9812, 1012, 102&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="159" y="95" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TenlmuJaaia4aGezL9sJ-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;0, 11126, 565, 7634, 1503, 4, 2597, 22098, 14269, 5, 21026, 4, 2&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="159" y="215" width="448" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

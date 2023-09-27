@@ -1,0 +1,21 @@
+\section{Broader Impact} \label{sec:broader-impact}
+
+This thesis contributes to the field of paper recommender systems in several ways.
+
+First, the evaluation of the Citation Recommender shows that the bibliographic coupling and co-citation analysis scores are markedly more effective than the global document characteristics for generating relevant recommendations.
+A key distinction between these two feature types is that citation-based features are query-specific, whereas global document characteristics are query-agnostic.
+Since the query paper provides insight into the user's profile, this finding motivates a stronger focus on \ac{CBF} for paper recommendation.
+For example, academic search engines such as Google Scholar or Semantic Scholar might enhance relevance by allowing user-specific papers as input to their searches.
+
+Second, our experiments reveal that the Language Recommender outperforms the Citation Recommender.
+Thus, we propose to put more emphasis on text-based approaches for paper recommendation in future research.
+Instead of combining content-based and citation-based approaches, hybrid systems could combine several content-based approaches as shown by Akkalyoncu Yilmaz et al. \cite{AkkalyoncuYilmazApplyingBERT2019} and Farber and Sampath \cite{FarberHybridCiteHybrid2020}.
+
+The strong performance of SciBERT, which stands out as the sole language model trained on scientific text, encourages exploration of the benefits of domain-specific approaches in the field of paper recommendation and beyond, emphasizing the importance of fine-tuning.
+On the flip side, the underwhelming performance of the Longformer model underscores the importance of using models in alignment with their designated purposes.
+In the case of Longformer, this is processing long documents beyond what traditional models like BERT are capable of, which is only partially fulfilled by the paper abstracts used in this thesis.
+
+Lastly, while the \ac{MAP} is a valuable metric, it is just one of several metrics used to evaluate the performance of recommender systems.
+Metrics like diversity, serendipity, novelty, and coverage are more difficult to quantify but crucial to the user experience \cite{KaminskasDiversitySerendipity2016,SilveiraHowGood2019,BaiScientificPaper2020}.
+In this thesis, we attempted to measure recommendation diversity by gauging the interdisciplinarity of the recommendations.
+We hope that this approach inspires further research into quantifying metrics beyond accuracy, providing a more holistic measurement of recommender system performance.
