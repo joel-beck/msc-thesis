@@ -2,7 +2,7 @@
 
 This repository presents my master's thesis, "Bridging Citation Analysis and Language Models: A Hybrid Recommender System for Computer Science Papers", submitted to the University of Göttingen on September 26th, 2023, as a requirement for the Master of Science in Applied Statistics.
 
-The thesis was supervised by supervised by [Dr. Corinna Breitinger](https://gipplab.org/team/corinna-breitinger/) and [Dr. Terry Ruas](https://gipplab.org/team/dr-terry-lima-ruas/) from the [Chair for Scientific Information Analytics](https://gipplab.org) at the University of Göttingen.
+The thesis was supervised by [Dr. Corinna Breitinger](https://gipplab.org/team/corinna-breitinger/) and [Dr. Terry Ruas](https://gipplab.org/team/dr-terry-lima-ruas/) from the [Chair for Scientific Information Analytics](https://gipplab.org) at the University of Göttingen.
 
 As part of this thesis, I developed the [readnext](https://github.com/joel-beck/readnext) package that implements the hybrid recommender system in a Python package.
 See the [readnext documentation](https://joel-beck.github.io/readnext/) for more information about the installation and usage of the package.
